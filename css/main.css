@@ -1,0 +1,233 @@
+*{
+    padding:0;
+    margin: 0;
+}
+nav{
+    /*background: #FFCCCC;*/
+    height: 50px;
+}
+#banner{
+    background: #fffffb;
+    height: 600px;
+    background: rgba(0,0,0,0.2)
+}
+nav ul{
+    list-style: none;
+    float: right;
+}
+nav ul li,nav .logo{
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+}
+nav ul li a{
+    line-height: 50px;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-block;
+    height: inherit;  /*inherit 继承它的父元素的max-width*/
+    color: #fff;
+}
+nav ul li.logo{
+    float: left;
+    margin-left: 20px;
+}
+#banner  .inner{
+    max-width: 260px;  /* 了解max-width是干什么的*/
+    word-wrap:break-word; /*自动换行  在这里已经设置宽度 ，为什么不能实现自动换行*/
+    text-align: center;
+    margin: 0px auto 10px;
+    position: relative;
+    top: 150px;
+}
+#banner .inner h1{
+    margin: 0;
+}
+#banner .inner p{
+    margin-top: 10px;
+  }
+button{
+    border: none;
+    background: #333333;
+    color: palevioletred;
+    padding: 10px;
+    margin-top: 10px;
+}
+#banner .inner .more{
+    margin-top: 220px;
+}
+.sub-heading{
+    line-height: 30px;
+    font-size: 16px;
+    padding: 9px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    margin-left: 10px;
+}
+/*concent begining*/
+.wrapper{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 48px;
+    /*padding-bottom: 10px;*/
+}
+.hr{
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+}
+.green-section{
+    text-align: center;
+    background: #008899;
+    color: #fff;
+    padding: 80px;
+}
+.green-section .hr{
+    background: #007788;
+    margin:10px 0 28px;
+}
+.green-section .icon-group .icon{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #066471;
+    transform: rotate(45deg);
+    margin: 20px;
+}
+.icon-group{
+    margin-top: 30px;
+}
+.gray-section{
+    background: #252f34;
+}
+.gray-section .img-section{
+    width: 45%;
+}
+.img-section img{
+    width: 100%;
+}
+.gray-section .text-section{
+    width: 55%;
+}
+/*设置奇数行为一个颜色*/
+.artical-preview:nth-child(odd){
+    background-color: rgba(255,255,255,0.05);
+    /*background-color: lightpink;*/
+
+}
+
+.artical-preview >div{
+    float: left;
+
+    /*清除图片之间的小空隙*/
+}
+/*清除父级的浮动*/
+.artical-preview:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.text-section{
+    position: relative;
+    top: 68px;
+    left: 50px;
+    color: #ffffff;
+}
+.text-section h2{
+    margin-bottom: 7px;
+}
+.text-section p{
+    word-wrap:break-word;
+    letter-spacing: 1px;
+}
+.text-section .sub-heading{
+    font-size: 20px;
+    margin-bottom: 7px;
+
+}
+.text-section *{
+    max-width: 80%;
+}
+
+/*purple */
+.purple-section{
+    background: #484561;
+    color: #ffffff;
+}
+.purple-section .heading-wrapper{
+    text-align: center;
+}
+.purple-section .hr{
+    color: black;
+    width: 60%;
+}
+.card{
+    float: left;
+    width: 50%;
+    min-height: 180px;
+    padding: 38px;
+    /*下面的代码是什么作用*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.card:first-child{
+    background-color: rgba(0,0,0,0.03);
+}
+.card:nth-child(2){
+    background-color: rgba(0,0,0,0.08);
+}
+.card:nth-child(3){
+    background-color: rgba(0,0,0,0.12);
+}
+.card:nth-child(4){
+    background-color: rgba(0,0,0,0.16);
+}
+
+/*footer*/
+footer{
+    background: #333333;
+    color: #ecff9f;
+    min-height: 80px;
+    text-align: center;
+    padding: 50px;
+}
+ul .share-group{
+    display: block;
+    width: 1080px;
+    margin: 0 auto;
+}
+.share-group li{
+    display: inline-block;
+    padding: 10px;
+}
+.copy{
+    padding-bottom: 20px;
+}
+
+.main-wrapper{
+    /*设置整个页面的背景*/
+    background: #444 url(../img/banner.jpg);
+    /*固定图片不可以移动*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*设置背景图片的大小为封面*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+/*处理图标的网站：font awesome*/
